@@ -258,6 +258,9 @@ vim.o.termguicolors = true
 -- See `:help vim.keymap.set()`
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 vim.keymap.set({'n'}, '<leader>[', '<C-w>w', {silent = true})
+
+-- keymap for split windw vertically
+vim.keymap.set({'n'}, '<leader>w', '<C-w>v', {silent = true})
 -- keymap for openning Neotree
 vim.keymap.set({'n'}, '<leader>e', ":Neotree <enter>", {silent = true})
 -- Keymap for closing Neotree
