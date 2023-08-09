@@ -265,6 +265,9 @@ vim.keymap.set({'n'}, '<leader>w', '<C-w>v', {silent = true})
 vim.keymap.set({'n'}, '<leader>e', ":Neotree <enter>", {silent = true})
 -- Keymap for closing Neotree
 vim.keymap.set({'n'}, '<leader>o', ":Neotree close <enter>", {silent = true})
+-- keymap for opening Terminal
+vim.keymap.set({'n'}, '<leader>t', ":ToggelTerm <enter>", {silent = true})
+-- vim.api.nvim_buf_set_keymap(term.bufnr, "n", "q", "<cmd>close<CR>", {noremap = true, silent = true})
 
 -- keymap for find telescope find_files
 vim.keymap.set({'n'}, '<leader>f', ":Telescope find_files  <enter>", {silent = true})
