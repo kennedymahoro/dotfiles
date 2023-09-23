@@ -4,11 +4,12 @@ return {
   version = "*",
   cmd = "ToggleTerm",
   keys = {
-    {"<Leader>t", "ToggleTerm"}
+    {"<Ctr>t", "ToggleTerm"}
   },
   opts = {
-    open_mapping = [[<Leader>t]],
+    open_mapping = [[<Ctr>t]],
     direction = "float",
     hide_number = "true",
   }
 }
+
